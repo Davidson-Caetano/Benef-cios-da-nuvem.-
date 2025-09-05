@@ -1,0 +1,26 @@
+☁️ Arquitetura em Nuvem e Escalabilidade de Aplicações Web
+A organização eficiente dos arquivos em nuvem é essencial para otimizar o fluxo de informações dentro de uma empresa. No entanto, esse processo pode ser demorado, especialmente quando a implementação precisa ser feita do zero.
+
+🎯 Cenário Proposto
+Imagine a criação de um site com o objetivo principal de venda de ingressos online para diversos shows realizados na cidade. Após o anúncio de uma atração internacional, o site passa a receber um grande volume de acessos simultâneos, de forma repentina.
+Para garantir que o site não perca acessos e mantenha a experiência do usuário estável, é necessário estruturar uma aplicação escalável em nuvem, capaz de se adaptar à demanda.
+
+⚙️ Estratégia de Escalabilidade Dinâmica
+A aplicação será configurada com uma lógica de escalonamento automático (auto-scaling), baseada na quantidade de acessos em um intervalo de tempo, vamos usar o tempo de 3 segundos como base de calculo:
+
+Intervalo de Tempo - Tentativas de Acesso - Adiciona Servidor
+3 segundos           200 Acessos           Adcionar 1 Servidor
+3 segundos           400 Acessos           Adcionar 3 Servidor
+3 segundos           600 Acessos           Adcionar 5 Servidor
+
+
+🔄 Resultado esperado:
+- Flexibilidade no atendimento de picos de acesso
+- Redução de latência e falhas de carregamento
+- Garantia de disponibilidade e retenção de clientes
+
+🧠 Benefícios da Arquitetura em Nuvem
+- Elasticidade: Recursos são alocados conforme a demanda
+- Alta disponibilidade: O sistema se mantém acessível mesmo sob carga elevada
+- Custo otimizado: Pagamento proporcional ao uso dos recursos
+- Resiliência: Capacidade de recuperação rápida em caso de falhas
